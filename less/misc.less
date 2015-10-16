@@ -1,0 +1,258 @@
+.resizable-image { max-width: 100%; }
+
+.btn {
+    white-space: normal;
+}
+
+.fake-pointer, .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.description-block {
+    margin-top: 40px;
+    margin-bottom: 70px;
+
+    .preview-image {
+        min-height: 148px;
+
+        img { .resizable-image(); }
+
+        .icon {
+            min-height: 180px;
+            line-height: 180px;
+            .text-center();
+
+            .boxed-icon {
+                height: 163px;
+                width: 163px;
+                line-height: 163px;
+                border: 3px solid #3f3f3f;
+                margin: auto;
+            }
+        }
+    }
+
+    .description {
+        margin: 30px -15px;
+
+        .boxed {
+            background-color: @off-white;
+            padding: 20px 35px;
+        }
+
+        h5 {
+            font-weight: 700;
+            color: @gray;
+        }
+    }
+}
+
+.jumbotron {
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &.about {
+        background-image: url(../images/jumbotron-about.jpg);
+        min-height: 120px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        h1 { color: @gray-darker; }
+    }
+
+    &.trial {
+        min-height: 240px;
+        background-image: url(../images/jumbotron-trial.jpg);
+        padding: 80px 0;
+        margin-bottom: 0;
+        .text-center();
+    }
+
+    &.description {
+        background: @off-white;
+        color: @gray-darker;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        margin-bottom: 0;
+
+        .description-container { padding: 65px 0; }
+
+        p { font-size: 17px; }
+    }
+
+    &.home {
+        background-image: url(../images/jumbotron-home.png);
+        min-height: 436px;
+        margin-bottom: 0;
+
+        h1 { margin-bottom: 50px; }
+
+        .slogan {
+            font-style: normal;
+            font-weight: 800;
+        }
+    }
+
+    &.quote {
+        background: @gray;
+        padding: 85px 0;
+        margin: 0;
+
+        .fa { color: @brand-secondary; }
+
+        .emphasis {
+            font-style: normal;
+            font-weight: 800;
+            color: @brand-secondary;
+        }
+
+        .quote-text {
+            padding: 0;
+            margin: 0;
+            border: none;
+
+            footer {
+                font-size: 17px;
+                margin: 15px auto;
+
+                .source {
+                    font-weight: 700;
+                    .text-uppercase();
+                }
+            }
+        }
+    }
+}
+
+.primary {
+    background-color: @brand-primary;
+    color: #FFF;
+}
+
+.secondary {
+    background-color: @brand-secondary;
+    color: @gray;
+}
+
+.tertiary {
+    background-color: @brand-tertiary;
+    color: #FFF;
+}
+
+.container.form {
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    label {
+        font-weight: 400;
+        color: @gray;
+        font-size: 17px;
+    }
+
+    a {
+        font-weight: 800;
+        color: #ababab;
+
+        &.login-social {
+            display: inline-block;
+            margin: 0 15px;
+        }
+    }
+}
+
+.section {
+    .content {
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
+
+    .banner {
+        height: 64px;
+        line-height: 64px;
+
+        .banner-header {
+            font-weight: 700;
+            font-size: 22px;
+            .text-center();
+            .text-uppercase();
+        }
+    }
+
+    &.primary {
+        background-color: @gray-lighter;
+
+        .banner { background-color: @off-white; }
+
+        .content { color: @gray-darker; }
+    }
+
+    &.secondary {
+        background-color: #f2f4f2;
+        color: @gray;
+
+        .banner { background-color: @gray-lighter; }
+    }
+
+    &.tertiary {
+        background-color: #fff;
+        color: @gray;
+
+        .banner { background-color: @gray-lighter; }
+    }
+}
+
+.divider {
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 64px;
+    margin: 0;
+    .text-uppercase();
+}
+
+.navbar-nav li a.brand-primary {
+    color: @brand-primary;
+    font-weight: 700;
+}
+
+.button-container { padding: 70px 15px; }
+
+/* Sticky footer styles
+ -------------------------------------------------- */
+html, body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto;
+    /* Negative indent footer by its height */
+    margin: 0 auto -250px;
+    /* Pad bottom by footer height */
+    padding: 0 0 250px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+    padding: 70px 0;
+    color: #fff;
+    font-size: 14px;
+    height: 250px;
+    background-color: @gray-darker;
+
+    a {
+        color: #fff;
+
+        &.spaced {
+            display: inline-block;
+            margin: 0 0 0 10px;
+        }
+    }
+}
+
+.forgot-password {
+    color: #ababab;
+    margin: 10px 0;
+    .text-center();
+    .text-uppercase();
+}
